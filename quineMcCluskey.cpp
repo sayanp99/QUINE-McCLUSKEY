@@ -45,7 +45,17 @@ string fourbit(string bin)
 }
 
 //complements the changing bit
+string complement(string a,string b)
+{
+   string temp="";
+   for(int i=0;i<a.length();i++)
+   if(a[i]!=b[i])
+       temp=temp+"-";
+   else
+       temp=temp+a[i];
 
+   return temp;
+}
 
 //checks whether the hamming distance is 1 or not
 bool isGreyCode(string a,string b)
